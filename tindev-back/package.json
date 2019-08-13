@@ -1,0 +1,29 @@
+{
+  "name": "tindev-back",
+  "version": "1.0.0",
+  "description": "A back-end for a tindev app.",
+  "main": "src/server.js",
+  "scripts": {
+    "dev": "nodemon --exec \"babel-node src/server.js\"",
+    "build": "babel src --out-dir dist --copy-files",
+    "server": "node dist/server.js"
+  },
+  "author": "Jhonatan R. Santos",
+  "license": "MIT",
+  "dependencies": {
+    "axios": "^0.19.0",
+    "cors": "^2.8.5",
+    "dotenv": "^8.0.0",
+    "express": "^4.17.1",
+    "mongoose": "^5.6.8",
+    "socket.io": "^2.2.0"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.4.5",
+    "@babel/cli": "^7.4.4",
+    "@babel/node": "^7.4.5",
+    "@babel/plugin-proposal-class-properties": "^7.4.4",
+    "@babel/preset-env": "^7.4.5",
+    "nodemon": "^1.19.1"
+  }
+}
